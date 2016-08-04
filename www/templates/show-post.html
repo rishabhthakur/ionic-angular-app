@@ -1,0 +1,22 @@
+<ion-view title="View Post" id="page6" class=" ">
+    <ion-content padding="true" class="has-header">
+
+        <div class="list card">
+
+            <div class="item item-avatar">
+                <img ng-src="{{post.thumbnail}}">
+                <h2>{{post.title}}</h2>
+                <p>{{post.date}}</p>
+            </div>
+
+            <div class="item item-body">
+                <img class="full-image" ng-src="{{post.thumbnail_images.full.url}}">
+                <p ng-bind-html="post.content"></p>
+                <p><a href="javascript:void(0);" class="subdued">{{post.comments.length}} Comments</a></p>
+                <p><a href="javascript:void(0);" class="subdued">Author: {{post.author.name}} </a></p>
+            </div>
+
+        </div>
+
+    </ion-content>
+</ion-view>
